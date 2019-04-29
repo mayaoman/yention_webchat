@@ -41,6 +41,7 @@ public class Testsg {
 		HttpEntity<String> formEntity = new HttpEntity<String>(json, headers);
 		String jsonResult = restTemplate.postForObject(url , formEntity, String.class);
 		System.out.println(jsonResult);
+		System.out.println("ces");
 		//Response resp = JSON.parseObject(jsonResult, new TypeReference<Response>() {});
 	}
 
